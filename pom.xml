@@ -78,7 +78,14 @@
     <sonar.projectKey>saquib1928_test</sonar.projectKey>
     <sonar.moduleKey>client-java-parent</sonar.moduleKey>
   </properties>
-
+      <properties>
+    <sonar.projectKey>
+        saquib1928_test
+    </sonar.projectKey>
+    <sonar.moduleKey>
+        ${io.kubernetes}:${client-java-parent}
+    </sonar.moduleKey>
+       </properties>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
