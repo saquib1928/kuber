@@ -8,8 +8,7 @@
   <url>https://github.com/kubernetes-client/java</url>
   <description>Kubernetes Client Library</description>
 
-<!--   <modules>
-    <These modules are not released>  
+<!--   <modules> 
     <module>e2e</module>
     <module>examples</module>
     <module>client-java-contrib/cert-manager</module>
@@ -19,6 +18,7 @@
 	 they block upload for all modules. So these are listed first -->
 
     <!-- These modules are released -->
+    <modules>
     <module>util</module>
     <module>kubernetes</module>
     <module>proto</module>
