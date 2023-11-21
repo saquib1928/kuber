@@ -8,17 +8,17 @@
   <url>https://github.com/kubernetes-client/java</url>
   <description>Kubernetes Client Library</description>
 
-<!--   <modules> 
+  <modules>
+    <!-- These modules are not released -->  
     <module>e2e</module>
     <module>examples</module>
     <module>client-java-contrib/cert-manager</module>
     <module>client-java-contrib/prometheus-operator</module>
-    <module>client-java-contrib/admissionreview</module> -->
+    <module>client-java-contrib/admissionreview</module>
     <!-- Due to a bug NEXUS-19853 if skipped modules are at the end
 	 they block upload for all modules. So these are listed first -->
 
     <!-- These modules are released -->
-    <modules>
     <module>util</module>
     <module>kubernetes</module>
     <module>proto</module>
@@ -65,7 +65,7 @@
     <apache.commons.io>2.15.0</apache.commons.io>
     <common.codec.version>1.16.0</common.codec.version>
     <spring.boot.version>3.1.5</spring.boot.version>
-    <spring.version>6.0.13</spring.version>
+    <spring.version>6.1.0</spring.version>
     <prometheus.client.version>0.16.0</prometheus.client.version>
     <reflections.version>0.10.2</reflections.version>
 
@@ -73,10 +73,11 @@
 
     <gpg.keyname>48540ECBBF00A28EACCF04E720FD12AFB0C9EBA9</gpg.keyname>
     <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
-         <sonar.organization>saquib1928</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <sonar.projectKey>saquib1928_kuber</sonar.projectKey>
-  </properties> 
+     <sonar.organization>saquib1928</sonar.organization>
+   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+     <sonar.projectKey>saquib1928_strong</sonar.projectKey>	  
+  </properties>
+
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -150,7 +151,7 @@
       <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk-sts</artifactId>
-        <version>1.12.590</version>
+        <version>1.12.593</version>
         <optional>true</optional>
       </dependency>
       <dependency>
@@ -334,19 +335,8 @@
     </dependencies>
   </dependencyManagement>
 
-   <distributionManagement>
-		<repository>
-		  <id>central</id>
-		  <name>a0n5tucjjiuir-artifactory-primary-0-releases</name>
-		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-release</url>
-		</repository>
-		<snapshotRepository>
-		  <id>snapshots</id>
-		  <name>a0n5tucjjiuir-artifactory-primary-0-snapshots</name>
-		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-snapshot</url>
-		</snapshotRepository>
-	  </distributionManagement>
-  <build>
+	
+<build>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -634,6 +624,18 @@ limitations under the License.
           </plugin>
         </plugins>
       </build>
+	    <distributionManagement>
+		<repository>
+		  <id>central</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-releases</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-release</url>
+		</repository>
+		<snapshotRepository>
+		  <id>snapshots</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-snapshots</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-snapshot</url>
+		</snapshotRepository>
+	  </distributionManagement>
     </profile>
     <profile>
       <id>fluent-gen</id>
