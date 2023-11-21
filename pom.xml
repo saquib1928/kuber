@@ -442,11 +442,11 @@
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <extensions>true</extensions>
-        <configuration>
+<!--         <configuration>
           <serverId>ossrh</serverId>
           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
           <autoReleaseAfterClose>true</autoReleaseAfterClose>
-        </configuration>
+        </configuration> -->
       </plugin>
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
