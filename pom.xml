@@ -9,7 +9,7 @@
   <description>Kubernetes Client Library</description>
 
 <!--   <modules>
-    <!-- These modules are not released -->  
+    <These modules are not released>  
     <module>e2e</module>
     <module>examples</module>
     <module>client-java-contrib/cert-manager</module>
