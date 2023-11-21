@@ -73,10 +73,10 @@
 
     <gpg.keyname>48540ECBBF00A28EACCF04E720FD12AFB0C9EBA9</gpg.keyname>
     <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
-    <sonar.organization>saquib1928</sonar.organization>
+         <sonar.organization>saquib1928</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.projectKey>saquib1928_kuber</sonar.projectKey>
-       </properties> 
+  </properties> 
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
