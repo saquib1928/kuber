@@ -75,8 +75,11 @@
     <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
      <sonar.organization>saquib1928</sonar.organization>
    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-     <sonar.projectKey>saquib1928_strong-${project.groupId}:${project.artifactId}</sonar.projectKey>	  
-  </properties>
+<!--      <sonar.projectKey>saquib1928_strong-${project.groupId}:${project.artifactId}</sonar.projectKey> -->
+    <sonar.projectKey>
+        YourKey-${project.groupId}:${project.artifactId}
+    </sonar.projectKey>
+</properties>
 
   <licenses>
     <license>
